@@ -1,6 +1,6 @@
 - hosts: all
   tasks:
-    - pings:
+    - ping:
 
 - name: Sample playbook
   hosts: all
