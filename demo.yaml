@@ -5,6 +5,6 @@
 - name: Sample playbook
   hosts: all
   tasks:
-    - name: Print Hello World
+    - name: Print Hello WORLD
       ansible.builtin.debug:
-        msg: Hello World
+        msg: Hello WORLD
