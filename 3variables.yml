@@ -5,4 +5,4 @@
   tasks:
     - name: Print URL
       ansible.builtin.debug:
-        msg: "URL" = {{ URL }} #same line we are accessing variable with prefix $, here variable will be under {{ }}
+        msg: "URL = {{ URL }}" #same line we are accessing variable with prefix $, here variable will be under {{ }}
