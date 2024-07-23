@@ -2,7 +2,7 @@
   hosts: all
   vars:
     URL: google.com
-    tasks:
+  tasks:
       - name: Print URL
         ansible.builtin.debug:
           msg: "URL" = {{ URL }} #same line we are accesing variable with prefix $, here variable will be under {{ }}
