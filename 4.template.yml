@@ -4,4 +4,4 @@
     - name: Copy file
       ansible.builtin.copy:
         src: hello.txt
-        dest: /tmp/h1/txt
+        dest: /tmp/h1.txt
