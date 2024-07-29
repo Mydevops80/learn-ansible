@@ -5,3 +5,11 @@
       ansible.builtin.copy:
         src: hello.txt
         dest: /tmp/h1.txt
+
+    - name: template file
+      hosts: localhost
+      tasks:
+        - name: Copy file
+          ansible.builtin.template:
+            src: hello.txt
+            dest: /tmp/h2.txt
