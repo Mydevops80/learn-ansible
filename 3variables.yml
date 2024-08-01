@@ -7,7 +7,7 @@
   tasks:
     - name: Print URL
       ansible.builtin.debug:
-        msg: "URL = {{ URL }},URL1 - {{ URL! }}"
+        msg: "URL = {{ URL }},URL1 - {{ URL1 }}"
         #same line we are accessing variable with prefix $, here variable will be under {{ }}
   roles:
     - sample
