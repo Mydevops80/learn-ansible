@@ -3,5 +3,6 @@
   tasks:
     - name: Print Fact
       ansible.builtin.debug:
-        msg: "{{ ansible_is_chroot }}"
+        msg: "{{ ansible_lo[2].['netmask']}}"
+        #"{{ ansible_is_chroot }}"
         #"{{ ansible_interfaces[0] }}"
