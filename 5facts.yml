@@ -1,8 +1,5 @@
 - name: Facts
   hosts: localhost
-  var_files:
-    - ansible_default_ipv4
-    - ansible_lo
   tasks:
     - name: Print Fact
       ansible.builtin.debug:
