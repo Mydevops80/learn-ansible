@@ -42,3 +42,14 @@
     - name: Print
       ansible.builtin.debug:
         msg: "i am the num containing {{ num1 }}"
+
+
+
+- name: Retrive the output from previous tasks aand store in variable
+  hosts: localhost
+  tasks:
+    - ansible.builtin.shell: uptime
+      register: out
+
+    - ansible.builtin.debug:
+        msg: "{{ out }}"
