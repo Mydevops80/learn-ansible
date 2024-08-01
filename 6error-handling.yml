@@ -1,7 +1,7 @@
 - name: Error handling
   hosts: localhost
   tasks:
-    - shell: id roboshop
+    - shell: id pavani
       register: out
       ignore_errors: yes
 
