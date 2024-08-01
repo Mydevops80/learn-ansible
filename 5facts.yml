@@ -3,4 +3,4 @@
   tasks:
     - name: Print Fact
       ansible.builtin.debug:
-        msg: "{{ ansible_hostname }}"
+        msg: "{{ ansible_interfaces[0] }}"
