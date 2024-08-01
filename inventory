@@ -1,3 +1,7 @@
 [FRONTEND]
 frontend.heydevops.online
-ansible -i inventory FRONTEND
+[CATALOGUE]
+catalogue.heydevops.online
+
+# ansible -i inventory FRONTEND
+# ansible -i inventory all
