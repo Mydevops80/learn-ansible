@@ -2,6 +2,9 @@
 frontend.heydevops.online
 [CATALOGUE]
 catalogue.heydevops.online
+[USER]
+user.heydevops.online
+
 
 # ansible -i inventory FRONTEND
 # ansible -i inventory all
