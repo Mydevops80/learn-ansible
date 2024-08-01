@@ -19,10 +19,10 @@
     trainers:
       6am: john
       7am: bob
-    tasks:
-      - name: print
-        ansible.builtin.debug:
-          msg: "{{ CLASS }} - {{ timings[0]}} and the trainers are {{ trainers[6am]}}"
+  tasks:
+    - name: print
+      ansible.builtin.debug:
+        msg: "{{ CLASS }} - {{ timings[0]}} and the trainers are {{ trainers[6am]}}"
 
 
 - name: Variable data types
