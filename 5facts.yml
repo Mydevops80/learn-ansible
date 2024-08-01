@@ -3,4 +3,5 @@
   tasks:
     - name: Print Fact
       ansible.builtin.debug:
-        msg: "{{ ansible_interfaces[0] }}"
+        msg: "{{ module }}"
+        #"{{ ansible_interfaces[0] }}"
