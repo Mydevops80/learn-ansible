@@ -3,8 +3,8 @@
   tasks:
     - name: Print Fact
       ansible.builtin.debug:
-
-        var: ansible_lo
+        var: ansible_default_ipv4
+#        var: ansible_lo
 
       #       error  {{ ansible_lo.ipv4.netmask }}
         #        "{{ ansible_lo['ipv4']['netmask']}}"
