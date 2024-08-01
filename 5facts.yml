@@ -3,7 +3,10 @@
   tasks:
     - name: Print Fact
       ansible.builtin.debug:
-        msg: {{ ansible_lo.ipv4.netmask }}
+
+        var: ansible_lo
+
+      #       error  {{ ansible_lo.ipv4.netmask }}
         #        "{{ ansible_lo['ipv4']['netmask']}}"
         #"{{ ansible_is_chroot }}"
         #"{{ ansible_interfaces[0] }}"
