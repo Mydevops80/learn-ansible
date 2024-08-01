@@ -10,7 +10,7 @@
         msg: "URL = {{ URL }}" #same line we are accessing variable with prefix $, here variable will be under {{ }}
 
 - name: Variable type demo
-  hosts: local host
+  hosts: localhost
   vars:
     CLASS: devops
     timings:
