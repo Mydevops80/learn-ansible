@@ -24,3 +24,20 @@
       - name: print
         ansible.builtin.debug:
           msg: "{{ CLASS }} - {{ timings[0]}} and the trainers are {{ trainers[6am]}}"
+
+
+- name: Variable data types
+  hosts: localhost
+  vars:
+    num1: 5
+    num: 2.5
+    str1: abc
+    str2: abc123
+    boolean1: yes
+    boolean2: no
+    boolean3: true
+    boolean4: false
+  tasks:
+    - name: Print
+      ansible.builtin.debug:
+        msg: "i am the num containing {{ num1 }}"
