@@ -1,8 +1,26 @@
 - name: Demo on Variables
   hosts: all
+  vars_files:
+    - sample-vars.yml
   vars:
     URL: google.com
   tasks:
     - name: Print URL
       ansible.builtin.debug:
         msg: "URL = {{ URL }}" #same line we are accessing variable with prefix $, here variable will be under {{ }}
+
+
+- name: Variable type demo
+  host: local host
+  vars:
+    CLASS: devops
+    timings:
+      - 6am
+      - 7am
+    trainers:
+      6am: john
+      7am: bob
+    tasks:
+      - name: print
+        ansible.builtin.debug:
+          msg: "{{ CLASS }} - {{ timings[0]}} and the trainers are {{ trainers[6am]}}"
